@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {
+    --primary: #000;
+    --background: #fcf9d5;
+    --button: #49f5ea;
+    --button-disabled: #90ceca;
+    --new-game: #c4fb19;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+    background-color: var(--background);
+    color: var(--primary);
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#keyboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container {
+    text-align: center;
+}
+
+.game-options {
+    width: 80vw;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    font-size: 1.25rem;
+    border-radius: .3rem;
+    color: #fff;
+    background-color: var(--button);
+    border: none;
+}
+
+.btn:disabled {
+    background-color: var(--button-disabled);
+}
+
+#wordspotlight {
+    font-size: 40px;
+}
+
+#reset-btn {
+    margin-top: 1rem;
+    background-color: var(--new-game);
+}
